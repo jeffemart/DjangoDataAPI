@@ -1,10 +1,7 @@
-from rest_framework import viewsets, generics
-from .models import MyModel, Chamado
-from .serializers import MyModelSerializer, ChamadoSerializer
+from rest_framework import viewsets
+from .models import Chamado
+from .serializers import ChamadoSerializer
 
-class MyModelViewSet(viewsets.ModelViewSet):
-    queryset = MyModel.objects.all()
-    serializer_class = MyModelSerializer
 
 class ChamadoViewSet(viewsets.ModelViewSet):
     queryset = Chamado.objects.all()

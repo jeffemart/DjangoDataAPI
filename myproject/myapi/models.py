@@ -1,13 +1,5 @@
 from django.db import models
 
-class MyModel(models.Model):
-    # Defina os campos do seu modelo aqui
-    field1 = models.CharField(max_length=100)
-    field2 = models.IntegerField()
-    # ...
-
-    def __str__(self):
-        return self.field1  # Isso é apenas um exemplo; você pode escolher como deseja representar seu modelo
     
 class Chamado(models.Model):
     CodInterno = models.IntegerField()
